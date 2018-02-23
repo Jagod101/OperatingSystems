@@ -51,9 +51,7 @@ git push						[Push Local Changes to Repo]
 ## Projects
 1. [Sudoku Solution Validator](Assignments/SudokuSolutionValidator/)
   - Individual Project
-
 2. **TO BE ANNOUNCED**
-
 3. **TO BE ANNOUNCED**
 
 ## License
