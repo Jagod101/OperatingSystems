@@ -126,29 +126,26 @@ public class SudokuValidator {
   }
 
   //Function to check each of the 9 Sub Grids for possible Errors
-  private static void checkSubGrid(int rowStart, int rowStop, int columnStart, int columnStop, int subGridNum) {
+  private static void checkSubGrid(int rStart, int rStop, int cStart, int cStop, int sgNum) {
 
     HashSet<Integer> checkBoard = new HashSet<>();
 
-    for(int x = rowStart; x < rowStop; ++x) {
-      for(int y = columnStart; y < columnStop; ++y) {
+    for(int x = rStart; x < rStop; ++x) {
+      for(int y = cStart; y < cStop; ++y) {
         //If Error is Found
         if(!checkBoard.add(board[x][y])) {
-          System.out.println("SUBGRID " + subGridNum + "\t\tFound Error @ Row " + (x + 1) + ", Column " + (y + 1));
+          System.out.println("SUBGRID " + sgNum + "\t\tFound Error @ Row " + (x + 1) + ", Column " + (y + 1));
           Integer[] tempArray = checkBoard.toArray(new Integer[checkBoard.size()]);
 
           //Iterate through and find duplicate, find correct/suggest new value to replace the duplicate
           for(int z = 1; z < 10; z++) {
             if(Arrays.asList(tempArray).contains(z) == false) {
               MSubGridNum += z + 1;
-              System.out.println("\nSG ERROR: SubGrid " + subGridNum + "\tDuplicate " + board[x][y] + "\tReplace the Duplicate " + board[x][y] + " with a " + MSubGridNum);
+              System.out.println("\nSG ERROR: SubGrid " + sgNum + "\tDuplicate " + board[x][y] + "\tReplace the Duplicate " + board[x][y] + " with a " + MSubGridNum);
               MSubGridNum -= 2;
               break;
             }
           }
-          x = rowStop;
-          y = columnStop;
-          checkBoard.clear();
         }
       }
     }
