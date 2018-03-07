@@ -134,7 +134,6 @@ public class SudokuValidator {
       for(int y = columnStart; y < columnStop; ++y) {
         //If Error is Found
         if(!checkBoard.add(board[x][y])) {
-          public boolean foundError = true;
           System.out.println("SUBGRID " + subGridNum + "\t\tFound Error @ Row " + (x + 1) + ", Column " + (y + 1));
           Integer[] tempArray = checkBoard.toArray(new Integer[checkBoard.size()]);
 
