@@ -22,3 +22,7 @@ References/Resources:
   - Used for Hash Maps/Sets, Thread Syntax for Java, Creating Executable
 - Viseth Sean (Discussion during TA Hours)
 - Professor Hansen (Discussion during Office Hours)
+
+Instructions:
+- Use cd to navigate to .jar file
+- Use 'java -jar SudokuValidator.jar' to start program
