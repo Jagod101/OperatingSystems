@@ -19,7 +19,7 @@ These instructions will help you create a copy of the project and run it on your
 ### Installation
 Clone/Download the Repository
 ```
-git clone https://github.com/Jagod101/CUDataStructures.git
+git clone https://github.com/Jagod101/OperatingSystems.git
 ```
 
 ### Compile Code
