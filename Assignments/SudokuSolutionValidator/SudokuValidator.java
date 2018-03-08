@@ -1,3 +1,20 @@
+/*
+ *  Name: Zachary Jagoda
+ *  Student ID: 2274813
+ *  Email: jagod101@mail.chapman.edu
+ *  Course: CPSC 380  Section: 01
+ *  Project 1: Sudoku Validator
+ *
+ *  Functions/Methods/Classes: a) readBoard(), b) printBoard(), c) CheckColumns, d) CheckRows, e) checkSubGrid(), f) SubGridCheck, g) main()
+ *  a) Creates a Buffered Reader to take the Input from main(), transposes data from .txt file
+ *  b) Prints the Sudoku Board from the .txt file onto the Command Line
+ *  c) Checks the Columns for possible collisions/errors contained in the Sudoku Board
+ *  d) Checks the Rows for possible collisions/errors contained in the Sudoku Board
+ *  e) Checks the 9 Sub Grids (3x3's) on the Sudoku Board for repeating numbers based on collisions
+ *  f) Sets the parameters for the index at which checkSubGrid() will look, creates the non-physical boundaries of each Sub Grid
+ *  g) Asks for User File Input, sends file to readBoard(), starts Threads for CheckColumns, CheckRows, and SubGridCheck, attempts joins all three Threads, calls error messages contained in each Thread to be printed to the Command Line
+ */
+
 import java.io.*;
 import java.util.*;
 
