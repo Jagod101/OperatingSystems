@@ -33,8 +33,8 @@ g++ *.cpp						[Compiles the .cpp files for the program]
 ```
 FOR JAVA
 
-javac *.java        [Compiles the .java files for the program]
-java <FILENAME>     [Runs the compiled code, the actual program]
+javac *.java            [Compiles the .java files for the program]
+java <FILENAME>         [Runs the compiled code, the actual program]
 ```
 
 ### Git Integration
