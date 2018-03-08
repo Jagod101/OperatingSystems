@@ -27,14 +27,15 @@ In order to compile the projects, it is required to have g++
 ```
 FOR C++
 
-g++ *.cpp           [Compiles the .cpp files for the program]
-./a.out             [Result of the compiled code, the actual program]
+g++ *.cpp                 [Compiles the .cpp files for the program]
+./a.out                   [Result of the compiled code, the actual program]
 ```
 ```
 FOR JAVA
 
-javac *.java        [Compiles the .java files for the program]
-java <FILENAME>     [Runs the compiled code, the actual program]
+javac *.java              [Compiles the .java files for the program]
+java <FILENAME>           [Runs the compiled code, the actual program]
+java -jar <FILENAME>.jar  [If compiled as an Executable, used to run program]
 ```
 
 ### Git Integration
