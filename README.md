@@ -14,7 +14,7 @@ These instructions will help you create a copy of the project and run it on your
 
 **Linux/MacOS**
 - Any editor of your choice
-- g++ compiler
+- g++ OR javac compiler
 
 ### Installation
 Clone/Download the Repository
@@ -25,8 +25,16 @@ git clone https://github.com/Jagod101/CUDataStructures.git
 ### Compile Code
 In order to compile the projects, it is required to have g++
 ```
+FOR C++
+
 g++ *.cpp						[Compiles the .cpp files for the program]
 ./a.out							[Result of the compiled code, the actual program]
+```
+```
+FOR JAVA
+
+javac *.java        [Compiles the .java files for the program]
+java <FILENAME>     [Runs the compiled code, the actual program]
 ```
 
 ### Git Integration
