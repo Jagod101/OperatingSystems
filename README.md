@@ -35,7 +35,15 @@ FOR JAVA
 
 javac *.java              [Compiles the .java files for the program]
 java <FILENAME>           [Runs the compiled code, the actual program]
-java -jar <FILENAME>.jar  [If compiled as an Executable, used to run program]
+```
+
+### Creating an Executable
+```
+JAVA EXECUTABLE
+
+- Create a .mf file containing 'Manifest-Version: 1.0' and 'Main-Class: <MAIN CLASS NAME'
+- Archive by typing 'jar cmf <FILENAME>.mf <FILENAME>.jar <FILENAME>.class <FILENAME>.java'
+- Run with command 'java -jar <FILENAME>.jar'
 ```
 
 ### Git Integration
